@@ -222,7 +222,7 @@ clean:
 
 好了，现在含有 JNI 代码的工程前后已经准备好了。开始调试 JNI 代码。
 
-##调试
+## 调试
 
 调试功能需要借助2个工具，jdb 和 gdb，jdb 常用调试 Java 进程，gdb 常用于调试  Ada, C, C++, Objective-C, Free Pascal, Fortran, Go 等语言进程。
 
