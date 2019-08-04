@@ -7,7 +7,7 @@
 
 JNI 即 Java Native Interface，在 Java 代码中调用 C/C++ 库文件，JNI 代码和 Java 代码不是很像，和 C/C++ 代码倒挺相似。写完 JNI 代码后如何调试它，这个问题困扰了我一阵子，在网上搜索查找资料后，慢慢学会了如何调试它，在这里总结下。
 
-##用于演示的代码
+## 用于演示的代码
 
 这里不着重讲如何写 JNI 代码，我贴出我用来演示如何调试的代码。
 
@@ -226,7 +226,7 @@ clean:
 
 调试功能需要借助2个工具，jdb 和 gdb，jdb 常用调试 Java 进程，gdb 常用于调试  Ada, C, C++, Objective-C, Free Pascal, Fortran, Go 等语言进程。
 
-######步骤一：debug 方式启动 Java 进程 main 方法。
+###### 步骤一：debug 方式启动 Java 进程 main 方法。
 
 把 Java 代码打包成 Jar 文件，然后以 debug 的方式启动，如上面的 bash start.sh 脚本内容写的，重点是这行代码：
 
