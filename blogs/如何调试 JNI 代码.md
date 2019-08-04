@@ -260,7 +260,7 @@ gdb attach PID
 
 ![](../images/console3.jpg)
 
-上图中，先用 ps 指令找到启动的 Java 进程，然后利用 `gdb attach PID` 指令 attach 到 Java 进程。趁进程还没真正跑代码，先在 com_ikruns_SimapleJni.c （这个文件是我演示使用到的代码，对应的是 JNI 的C/C++代码部分）文件设置了一个断点，设置好断电后开始 run Java 进程。
+上图中，先用 ps 指令找到启动的 Java 进程，然后利用 `gdb attach PID` 指令 attach 到 Java 进程。趁进程还没真正跑代码，先在 com_ikruns_SimapleJni.c （这个文件是我演示使用到的代码，对应的是 JNI 的C/C++代码部分）文件设置了一个断点，设置好断点后开始 run Java 进程。
 
 ###### 步骤四：用 jdb 控制运行 Java 程序
 
