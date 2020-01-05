@@ -266,19 +266,19 @@ gdb attach PID
 
 在 console2 输入 `run`，如下图：
 
-![](../images/console2.1)
+![](../images/console2.1.jpg)
 
 因为演示代码是直接调用的 nativie code，刚才又在 com_ikruns_SimpleJni.c 文件里设置了断点，此时代码卡住是因为控制流程已经交给 gdb 了，我们看下 gdb 控制台窗口：
 
 ###### 步骤五：gdb 接管并控制进程，开始调试
 
-![](../images/console3.1)
+![](../images/console3.1.jpg)
 
 先按下c键，gdb 中 continue 的缩写，接着就提示命中断点，并停在了断点处。
 
 到此处就已经由 gdb 接管 Java 进程了，不过 gdb 只能接管 Java 进程中它能接管的部分，纯 Java 代码的调试它接管不了。后面的调试和使用 gdb 调试 C/C++ 代码一样，C/C++ 代码加 -g 编译后能在 gdb 中看到源码，我们进入 add 函数体里看看。在 console3 gdb 里按下 layout src 回车，看到界面变成：
 
-![](../images/console3.2)
+![](../images/console3.2.jpg)
 
 这是用 gdb 查看源码模式，接着再按下 s 进入函数体：
 
